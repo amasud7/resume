@@ -1,0 +1,233 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ayad Masud} \\ \vspace{1pt}
+    \small 720-453-8040 $|$ \href{mailto:ayad.r.masud@gmail.com}{\underline{ayad.r.masud@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/amasud7}{\underline{linkedin.com/in/amasud7/}} $|$
+    \href{https://github.com/amasud7}{\underline{github.com/amasud7}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Bachelor of Science in Computer Science: GPA: 3.83}{Aug. 2023 -- Present}
+    \resumeSubheading
+      {Plano Senior High School}{Plano, TX}
+      {GPA: 3.9/4.0}{Aug. 2021 -- May 2023}
+  \resumeSubHeadingListEnd
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+   \small{\item{
+    \textbf{Languages}{: Python, C/C++, Java, Python, R, JavaScript, HTML/CSS} \\
+    \textbf{Frameworks}{: Flask, Material-UI, React} \\
+    \textbf{Developer Tools}{: Git, Hugging Face Models, Command line, VS Code, PyCharm, IntelliJ, Eclipse} \\
+    \textbf{Libraries}{: Matplotlib, OpenCV, NumPy, BeautifulSoup, pandas, Selenium, Tensorflow}
+   }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Headstarter AI}{July 2024 -- Sept. 2024}
+      {Fellow}{Plano, TX}
+      \resumeItemListStart
+        \resumeItem{Over the course of 7 weeks worked on 5 AI related projects in a team of 4 developers.}
+        \resumeItem{Participated in Hiring Hackathon and placed top 20 among 500 teams.}
+        \resumeItem{Used Flask, OpenAI, Stripe, Firebase, Clerk, and other technologies to develop full stack web projects.}
+        \resumeItem{Engaged in weekly coaching calls, refining long-term career goals and enhancing resume and interview skills}
+        \resumeItem{Received feedback from software engineers, improving code quality, project management, and communication skills}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Aggie Research Scholar Program}{August 2024 -- Present}
+      {Researcher}{College Station, TX}
+      \resumeItemListStart
+        \resumeItem{Under the guidance of PHD students, worked on insole gait analysis and fall prediction using sensor data.}
+        \resumeItem{Cleaned and prepared data for analysis and machine learning models using pandas and Numpy}
+        \resumeItem{Performed analysis along other team members to detect falls and analyze gait patterns of construction workers.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {CareNow Pharmacy}{May 2024 -- Present}
+      {Pharmacy Technician}{Plano, TX}
+      \resumeItemListStart
+        \resumeItem{Utilized pharmacy software systems for data entry tasks, inventory management, and prescription entry}
+        \resumeItem{Collaborated with healthcare providers to clarify prescription orders and ensure optimal patient care.}
+        \resumeItem{Provided exceptional customer service, addressing patient inquiries regarding prescriptions, dosage instructions, and insurance coverage}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{H.AI.R} $|$ \emph{Python, Flask, Hugging Face, HTML, CSS, Vercel}}{July 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web app to recommend hair care products to users based on their hair type.}
+            \resumeItem{Utilized Hugging Face models to classify hair types.}
+            \resumeItem{Leveraged Flask framework and Vercel deployment for fully functioning app.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Color Detector} $|$ \emph{OpenCV, Python, Numpy, PIL (Python Imaging Library)}}{May 2024}
+          \resumeItemListStart
+            \resumeItem{Utilized OpenCV and PIL to develop a Python script to live detect colors in a video feed.}
+            \resumeItem{Used Numpy to simultaneously store and manipulate pixel data before detection.}
+            \resumeItem{Leveraged PIL's built in bounding box detection to outline regions of colors that are detected.}
+            \resumeItem{OpenCV functions were used to perform dilations and masking to easily detect colors.}
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+          {\textbf{LLM Rate My Professor} $|$ \emph{Google Gemini/PaLm API, Python, Selenium, Flask, HTML, CSS}}{Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web app to summarize Rate My Professor reviews.}
+            \resumeItem{Utilized Selenium to scrape all reviews for a given professor.}
+            \resumeItem{Leveraged Google's Gemini LLM model to summarize scraped reviews into coherent summaries.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+
+%-----------Extra-Curricular Activities-----------
+\section{Extracurricular}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Aggie Coding Club}{: Took part in weekly meetings, workshops, projects, and social activities} \\
+     \textbf{TAMU Hack}{: Attended several of their hackathons} \\
+     \textbf{Headstarter Hiring Hackathon}{: Participated in weekend hackathons for internship positions.} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
