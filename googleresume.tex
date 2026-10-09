@@ -40,11 +40,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -54,8 +54,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2.5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -64,40 +64,40 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1.5pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{-0.5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-2pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,7 +134,7 @@
    \small{\item{
     \textbf{Languages}{: Python, C++, Java, JavaScript, TypeScript, Swift, SQL, R, HTML/CSS} \\
     \textbf{Frameworks/Libraries}{: React, Flask, Node.js, OpenCV, NumPy, pandas, Selenium, BeautifulSoup, Matplotlib} \\
-    \textbf{Developer Tools}{: Git, Docker, MongoDB, Azure, REST APIs, CI/CD, Agile/Kanban} \\
+    \textbf{Developer Tools}{: Git, Docker, MongoDB, Azure, REST APIs, CI/CD, TDD, Agile/Kanban} \\
     \textbf{Courses}{: Data Structures and Algorithms, Database Systems, Artificial Intelligence, Machine Learning}
    }}
 \end{itemize}
@@ -147,7 +147,7 @@
       {Microsoft}{May 2026 - Aug. 2026}
       {Software Engineering Intern}{Redmond, WA}
       \resumeItemListStart
-        \resumeItem{Designed and prototyped a self-serve schema deployment system for Microsoft Graph, replacing a biweekly shared rollout with per-workload, independently gated pipelines and cutting deployment wait from \textbf{up to ~4 days to on-demand for ~200 workload teams}.}
+        \resumeItem{Designed and prototyped a self-serve CI/CD schema deployment system for Microsoft Graph, replacing a biweekly shared rollout with per-workload, independently gated pipelines and cutting deployment wait from \textbf{up to ~4 days to on-demand for ~200 workload teams}.}
         \resumeItem{Automated cross-workload aggregation gating and dependency-aware rollback handling, enabling continuous conflict-safe schema deployment while preserving merge correctness and rollout ordering.}
         \resumeItem{Removed the onboarding team as a deployment bottleneck by decoupling workload teams onto independent ring pipelines, eliminating an estimated \textbf{900+ days of cumulative deployment waiting per year} across workload teams.}
       \resumeItemListEnd
@@ -156,19 +156,18 @@
       {Microsoft}{May 2025 - Aug. 2025}
       {Software Engineering + Product Management Intern}{Redmond, WA}
       \resumeItemListStart
-        \resumeItem{Designed and developed a customer-facing \textbf{Least Privilege Recommender} in the Microsoft Entra portal to enhance \textbf{identity security} and reduce \textbf{over-privileged access}.}
-        \resumeItem{Collaborated with senior engineers through \textbf{code reviews} and \textbf{Agile} sprints, iterating on feedback to align deliverables with customer needs.}
-        \resumeItem{Integrated \textbf{Azure OpenAI} and \textbf{Semantic Kernel} cloud services to build an LLM-powered back-end pipeline automating privilege analysis.}
-        \resumeItem{Delivered end-to-end \textbf{POC} in a \textbf{Kanban}-driven workflow, presenting to stakeholders and receiving approval for production roadmap.}
+        \resumeItem{Developed a customer-facing \textbf{Least Privilege Recommender} in the Microsoft Entra portal that analyzes usage patterns and suggests minimal access, reducing identity attack surface and administrative overhead for enterprise IT teams.}
+        \resumeItem{Implemented \textbf{test-driven development (TDD)} with unit and integration tests to ensure recommender accuracy and prevent privilege escalation bugs before production.}
+        \resumeItem{Integrated \textbf{Azure OpenAI} and \textbf{Semantic Kernel} to automate privilege analysis, cutting manual audit time from hours to minutes for security administrators.}
+        \resumeItem{Delivered an end-to-end \textbf{POC} approved for production roadmap, projected to reduce over-privileged access across thousands of enterprise tenants.}
       \resumeItemListEnd
 
   \resumeSubheading
       {TAMU RoboMasters Computer Vision Team}{Sept. 2024 - Feb. 2025}
       {Team Member}{College Station, TX}
       \resumeItemListStart
-        \resumeItem{Collaborated in a team using \textbf{Git} to develop computer vision capabilities including auto-aim, localization, and icon detection for RoboMasters competition.}
-        \resumeItem{Built computer vision algorithms to detect numbers on enemy armor plates with a \textbf{90\%} accuracy rate.}
-        \resumeItem{Optimized algorithm to compute classification for a frame in \textbf{30ms}, a \textbf{22\%} decrease in computation time compared to previous method.}
+        \resumeItem{Developed computer vision algorithms to detect enemy armor plates with \textbf{90\%} accuracy and classify frames in \textbf{30ms}, enabling real-time auto-aim and battlefield localization for the competition robot.}
+        \resumeItem{Collaborated using \textbf{Git} and \textbf{CI/CD} pipelines to build, test, and deploy vision capabilities, ensuring reliable performance during high-stakes matches.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -220,29 +219,27 @@
     \resumeProjectHeading
           {\textbf{Pupil - Agentic AI Shadowing Framework} $|$ \emph{Python, Claude API, Playwright, ChromaDB}}{Feb. 2026}
           \resumeItemListStart
-            \resumeItem{Developing an AI agent framework that shadows engineers during live workflows, learns operational patterns, and autonomously executes tasks.}
-            \resumeItem{Architected a multi-phase, multi-agent learning pipeline with structured context modeling and cost-aware LLM orchestration to enable scalable, human-in-the-loop automation.}           
+            \resumeItem{Building an AI agent framework that shadows engineers during live workflows and autonomously executes repetitive tasks, reducing operational toil and onboarding time for engineering teams.}
+            \resumeItem{Architected a cost-aware, multi-agent learning pipeline with structured context modeling to enable scalable, human-in-the-loop automation.}
           \resumeItemListEnd
 
     \resumeProjectHeading
           {\textbf{CORTEX - Complete Travel Ecosystem} $|$ \emph{Swift, OpenCV, MongoDB, ARkit, CoreML}}{January 2026}
           \resumeItemListStart
-            \resumeItem{Placed \textbf{1st Place} at TAMUHack (Over 650 participants).}
-            \resumeItem{Built a smart travel assistant using \textbf{Computer Vision} and \textbf{AR} pipeline to track personal items and luggage in airports, guiding users back via a 3D terminal view.}
-            \resumeItem{Developed a \textbf{low-latency} voice agent with \textbf{sub-2s} responses using \textbf{Gemini 2.0 Flash + ElevenLabs}, integrated with airline \textbf{REST APIs} for instant gate and flight info.}
+            \resumeItem{Built a smart travel assistant using \textbf{Computer Vision} and \textbf{AR} to help travelers track personal items and navigate airports via a 3D terminal view, reducing recovery time and travel stress.}
+            \resumeItem{Developed a \textbf{sub-2s} latency voice agent integrated with airline \textbf{REST APIs} to deliver instant gate and flight updates, improving real-time communication for passengers.}
           \resumeItemListEnd
 
     \resumeProjectHeading
           {\textbf{LLM Rate My Professor} $|$ \emph{Google Gemini/PaLm API, Python, Selenium, Flask, HTML, CSS}}{Dec. 2023}
           \resumeItemListStart
-            \resumeItem{Built a \textbf{full-stack} web app with a \textbf{Flask back-end} that scrapes Rate My Professor reviews via Selenium and summarizes them using \textbf{Google's Gemini LLM API}.}
+            \resumeItem{Built a \textbf{full-stack} web app that scrapes and summarizes professor reviews using \textbf{Google's Gemini LLM}, saving students hours of manual research during course registration.}
           \resumeItemListEnd
 
     \resumeProjectHeading
     {\textbf{Ember - Fire Damage Visualizer} $|$ \emph{Python, Flask, React, Plotly, OpenAI API, REST-API}}{Jan. 2025}
     \resumeItemListStart
-      \resumeItem{Placed \textbf{2nd place} in ARM challenge at TAMUHack.}
-      \resumeItem{Built a \textbf{full-stack} app (\textbf{Flask} back-end, \textbf{React} front-end) consuming government \textbf{REST APIs} and \textbf{OpenAI API} to visualize LA fire damage on an interactive Plotly dashboard.}
+      \resumeItem{Built a \textbf{full-stack} app (\textbf{Flask} back-end, \textbf{React} front-end) consuming government \textbf{REST APIs} and \textbf{OpenAI API} to visualize LA fire damage on an interactive dashboard, helping residents and insurers assess property impact and expedite recovery decisions.}
     \resumeItemListEnd
 
 
